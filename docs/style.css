@@ -1,3 +1,7 @@
+.col-md-2, .col-md-2{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 body
 {
   background:#fff;
@@ -26,18 +30,29 @@ img{
   margin-left:auto;
   margin-right: auto;
 }
-
+.menuContainer{
+  height: 100%;
+  background-color: #16B08B;
+}
 .menuContainer > li:first-of-type > a:hover{
   /*background-color: white !important;*/
 }
+.menuContainer > li{
+  margin:3px !important;
+}
+
+.menuContainer > li > a:hover, .subMenuContainer > li > a:hover{
+  background-color: #a4f4e1!important;
+}
 
 .menuContainer > .active > a{
-  background-color: #16B08B !important;
-  color: white;
+  background-color: white !important;
+  color: #16B08B !important;
+  font-weight: bold;
 }
 
 .menuContainer > :not(.active) > a{
-  color: #16B08B;
+  color: white;
 }
 
 .subMenuContainer{
@@ -45,17 +60,13 @@ img{
 }
 
 .subMenuContainer > .active > a{
-  border: 2px solid green;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  border-radius:0px;
-  background-color: white !important;
-  color: #16B08B !important;
+  font-weight: bold;
+  background-color: #16B08B !important;
+  color: white !important;
 }
 
 .subMenuContainer > :not(.active) > a{
-  color: #16B08B;
+  color: white;
 }
 
 .boxContainer{
