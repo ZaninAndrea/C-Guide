@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#subMenu" style="position:relative">
 
 <div class="Main">
   <div class="row">
@@ -18,7 +18,18 @@
         <li><a href="#section1">1. Who is this guide for</a></li>
         <li><a href="#section2">2. Getting Started</a></li>
         <li><a href="#section3">3. Variables</a></li>
-        <li class="active"><a href="#section4">4. If statement</a></li>
+        <li class="active"><a href="#section4">4. If statement</a>
+          <nav id="subMenu">
+            <ul class="nav nav-pills nav-stacked subMenuContainer">
+              <li class="active"><a href="#ifTheory">If - theory</a></li>
+              <li><a href="#ifPractice">If - practice</a></li>
+              <li><a href="#elseTheory">Else - theory</a></li>
+              <li><a href="#elsePractice">Else - practice</a></li>
+              <li><a href="#assignement">Assignement</a></li>
+              <li><a href="#advanced">Advanced</a></li>
+            </ul>
+          </nav>
+        </li>
         <li><a href="#section1">5. While and For Statements</a></li>
         <li><a href="#section2">6. Arrays</a></li>
         <li><a href="#section3">7. Methods</a></li>
@@ -30,7 +41,7 @@
 
       <p class=BigTitleGuide><span lang=EN-US>If statement</span></p>
 
-      <p class=LittleTitleGuide><span lang=EN-US>THEORY</span></p>
+      <p class=LittleTitleGuide id="ifTheory"><span lang=EN-US>THEORY</span></p>
 
       <p>So far we've only been able to create programs that always does the same thing, but programming is much more than that: we can use <span style='color:#16B08B'>flow controls</span>. [insert flow controls]
       A good way to explain those are flow charts. The simplest flow control is <b>if</b>: it checks a condition and if it's true executes a piece of code, otherwise skips it. The flow chart for if looks something like this.</p>
@@ -40,7 +51,7 @@
       <br />
       <br />
 
-      <p class=LittleTitleGuide>PRACTICE</p>
+      <p class=LittleTitleGuide id="ifPractice">PRACTICE</p>
 
       <p class=MsoNormal>
         <!-- THIS IS A CODE BLOCK -->
@@ -167,7 +178,7 @@
 
       <p class=BigTitleGuide>Else statement</p>
 
-      <p class=LittleTitleGuide>THEORY</p>
+      <p class=LittleTitleGuide id="elseTheory">THEORY</p>
 
       <p>After our if statement we can write an else statement, that is a fancy way of saying if the conditions is false do this. In our flow chart would look like this
         <p>
@@ -178,7 +189,7 @@
 
       <img width="70%" height="auto" src="4.The_if_statement_files/image008.png" alt="ELSE IF statement">
 
-      <p class=LittleTitleGuide>PRACTICE</p>
+      <p class=LittleTitleGuide id="elsePractice">PRACTICE</p>
 
       <p>The syntax for the else statement is this:</p>
 
@@ -225,7 +236,7 @@
 
       <p>Ok, I admit it I might have a problem with those charts.</p>
 
-      <p class=LittleTitleGuide>ASSIGNEMENT</p>
+      <p class=LittleTitleGuide id="assignement">ASSIGNEMENT</p>
 
       <p>Using what you learned try to create a program that asks the user for a password and if the users inputs the right password write your secret, if he inputs a second password write a fake secret (this is to prevent blackmail), if the password is wrong just write "You don't have the password, go away".<br/>
       In case you want to check the solution...</p>
@@ -243,7 +254,7 @@
       <span class="c1">//end</span>
       </pre></div>
 
-      <p class=LittleTitleGuide>ADVANCED</p>
+      <p class=LittleTitleGuide id="advanced">ADVANCED</p>
 
       <p>If you just need to assign a value to a variable in the if and else statement you can use a compact form. <br/>
       Instead of using this</p>
