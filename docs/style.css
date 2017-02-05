@@ -1,0 +1,220 @@
+body
+{
+  background:#fff;
+  font-size:12pt !important;
+  font-family:"Segoe UI",sans-serif !important;
+}
+.highlight
+{
+  width:100%;
+}
+
+.PageContent
+{
+}
+
+.syntax
+{
+  color:purple;
+}
+.Main{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+img{
+  display:block;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.menuContainer{
+  margin-top:50px;
+}
+
+.menuContainer > .active > a{
+  background-color: #16B08B !important;
+  color: white;
+}
+
+.menuContainer > :not(.active) > a{
+  color: #16B08B;
+}
+
+.boxContainer{
+  background-color:yellow;
+  height:100%;
+}
+
+td.linenos
+{
+  background-color:#f0f0f0;
+  padding-right:10px;
+}
+
+span.lineno
+{
+  background-color:#f0f0f0;
+  padding:0 5px;
+}
+
+pre
+{
+  line-height:125%;
+}
+
+body .hll
+{
+  background-color:#ffc;
+}
+
+
+body .err
+{
+  border:1px solid red;
+}
+
+body .ge
+{
+  font-style:italic;
+}
+
+@font-face
+{
+  font-family:"Segoe UI";
+  panose-1:2 11 5 2 4 2 4 2 2 3;
+}
+
+p.MsoNormal,li.MsoNormal,div.MsoNormal
+{
+  text-autospace:ideograph-other;
+  font-size:12pt;
+  font-family:"Segoe UI",sans-serif;
+  margin:0 0 .0001pt;
+}
+
+p.Standard,li.Standard,div.Standard
+{
+  mso-style-name:Standard;
+  mso-style-link:"Standard Char";
+  text-autospace:ideograph-other;
+  font-size:12pt;
+  font-family:"Segoe UI",sans-serif;
+  margin:0 0 .0001pt;
+}
+
+p.TableContents,li.TableContents,div.TableContents
+{
+  mso-style-name:"Table Contents";
+  text-autospace:ideograph-other;
+  font-size:12pt;
+  font-family:"Segoe UI",sans-serif;
+  margin:0 0 .0001pt;
+}
+
+p.BigTitleGuide,li.BigTitleGuide,div.BigTitleGuide
+{
+  mso-style-name:"Big Title Guide";
+  mso-style-link:"Big Title Guide Char";
+  text-align:center;
+  text-autospace:ideograph-other;
+  font-size:20pt;
+  font-family:"Segoe UI",sans-serif;
+  color:#16B08B;
+  font-weight:700;
+  margin:0 0 .0001pt;
+}
+
+span.BigTitleGuideChar
+{
+  mso-style-name:"Big Title Guide Char";
+  mso-style-link:"Big Title Guide";
+  font-family:"Segoe UI",sans-serif;
+  color:#16B08B;
+  font-weight:700;
+}
+
+p.LittleTitleGuide,li.LittleTitleGuide,div.LittleTitleGuide
+{
+  mso-style-name:"Little Title Guide";
+  mso-style-link:"Little Title Guide Char";
+  text-autospace:ideograph-other;
+  font-size:12pt;
+  font-family:"Segoe UI",sans-serif;
+  color:#16B08B;
+  font-weight:700;
+  margin:0 0 .0001pt;
+}
+
+span.LittleTitleGuideChar
+{
+  mso-style-name:"Little Title Guide Char";
+  mso-style-link:"Little Title Guide";
+  font-family:"Segoe UI",sans-serif;
+  color:#16B08B;
+  font-weight:700;
+}
+
+span.StandardChar
+{
+  mso-style-name:"Standard Char";
+  mso-style-link:Standard;
+  font-family:"Segoe UI",sans-serif;
+}
+
+span.msoIns
+{
+  text-decoration:underline;
+  color:teal;
+}
+
+.MsoChpDefault
+{
+  font-family:"Segoe UI",sans-serif;
+}
+
+.MsoPapDefault
+{
+  margin-bottom:8pt;
+  line-height:107%;
+}
+
+@page WordSection1
+{
+  size:595.3pt 841.9pt;
+  margin:36pt;
+}
+
+div.WordSection1
+{
+  page:WordSection1;
+}
+
+body .c,body .ch,body .cm,body .cpf,body .c1,body .cs
+{
+  color:green;
+}
+
+body .k,body .cp,body .kc,body .kd,body .kn,body .kp,body .kr,body .ow
+{
+  color:#00f;
+}
+
+body .gh,body .gp,body .gs,body .gu
+{
+  font-weight:700;
+}
+
+body .kt,body .nc
+{
+  color:#2b91af;
+}
+
+body .s,body .sb,body .sc,body .sd,body .s2,body .se,body .sh,body .si,body .sx,body .sr,body .s1,body .ss
+{
+  color:#a31515;
+}
+
+ol,ul
+{
+  margin-bottom:0;
+}
