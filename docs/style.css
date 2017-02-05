@@ -27,8 +27,8 @@ img{
   margin-right: auto;
 }
 
-.menuContainer{
-  margin-top:50px;
+.menuContainer > li:first-of-type > a:hover{
+  /*background-color: white !important;*/
 }
 
 .menuContainer > .active > a{
