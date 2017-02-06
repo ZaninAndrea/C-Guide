@@ -34,6 +34,10 @@ img{
   height: 100%;
   background-color: #16B08B;
 }
+.allSidebar{
+  background-color: #16B08B;
+  width:100%;
+}
 .menuContainer > li:first-of-type > a:hover{
   /*background-color: white !important;*/
 }
