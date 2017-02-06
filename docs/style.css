@@ -42,7 +42,7 @@ img{
 }
 
 .menuContainer > li > a:hover, .subMenuContainer > li > a:hover{
-  background-color: #a4f4e1!important;
+  background-color: #19cca2!important;
 }
 
 .menuContainer > .active > a{
@@ -70,8 +70,28 @@ img{
 }
 
 .boxContainer{
-  background-color:yellow;
   height:100%;
+}
+
+.box{
+  margin:10px 3px 3px 3px;
+}
+
+.boxTitle{
+  border:1px solid #16B08B;
+  border-radius: 12px 12px 0px 0px;
+  padding:8px;
+  color: white;
+  background-color: #16B08B;
+  text-align: center;
+}
+
+.boxContent{
+  border:1px solid #19cca2;
+  border-radius: 0px 0px 12px 12px;
+  padding:8px;
+  color: white;
+  background-color: #19cca2;
 }
 
 td.linenos
