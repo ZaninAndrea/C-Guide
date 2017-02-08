@@ -1,0 +1,48 @@
+body{
+  max-width:1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:"Segoe UI",sans-serif;
+}
+
+#cover{
+  width:18%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.allSidebar{
+  background-color: white;
+  display: block;
+  margin-left: 20%;
+  text-align: left;
+  width:40%;
+}
+
+.menuContainer > li{
+  margin:0px !important;
+}
+
+.menuContainer > li > a:hover{
+  background-color: #19cca2!important;
+  color:white;
+}
+
+.menuContainer > li > a{
+  color: #16B08B;
+}
+
+.title{
+  font-size:20pt;
+  color:#16B08B;
+  font-weight:700;
+  text-align:center;
+}
+
+.contentTitle{
+  font-size:12pt;
+  color:#16B08B;
+  font-weight:700;
+  text-align:center;
+}

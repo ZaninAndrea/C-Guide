@@ -42,9 +42,13 @@ img{
   /*background-color: white !important;*/
 }
 .menuContainer > li{
-  margin:3px !important;
+  margin-left:8px !important;
+  margin-right:8px !important;
 }
 
+.menuContainer > li > a, .subMenuContainer > li > a{
+  padding:7px 0px 8px 7px;
+}
 .menuContainer > li > a:hover, .subMenuContainer > li > a:hover{
   background-color: #19cca2!important;
 }
@@ -72,6 +76,7 @@ img{
 .subMenuContainer > :not(.active) > a{
   color: white;
 }
+
 
 .boxContainer{
   height:100%;
