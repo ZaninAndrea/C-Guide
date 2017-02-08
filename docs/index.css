@@ -1,10 +1,12 @@
 body{
+  font-family:"Segoe UI",sans-serif;
+  background-color: #a4f4e1;
+}
+#Main{
   max-width:1000px;
   margin-left: auto;
   margin-right: auto;
-  font-family:"Segoe UI",sans-serif;
 }
-
 #cover{
   width:18%;
   display:block;
@@ -22,6 +24,7 @@ body{
 
 .menuContainer > li{
   margin:0px !important;
+  background-color: #a4f4e1;
 }
 
 .menuContainer > li > a:hover{
@@ -31,6 +34,7 @@ body{
 
 .menuContainer > li > a{
   color: #16B08B;
+  background-color: #a4f4e1;
 }
 
 .title{
@@ -45,4 +49,19 @@ body{
   color:#16B08B;
   font-weight:700;
   text-align:center;
+}
+
+#footer{
+  font-size: 3em;
+  width:100%;
+  background-color: #16B08B;
+  padding:10px 10% 10px 10%;
+}
+
+.footerLink{
+  color:black;
+}
+
+.footerLink:hover{
+  color:#0e715a;
 }
