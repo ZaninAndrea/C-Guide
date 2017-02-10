@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guida</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/e11e439cdf.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-spy="scroll" data-target="#subMenu" style="position:relative">
+
+<div class="Main">
+  <div class="row">
+    <div class="col-sm-3 col-md-2">
+      <nav class="allSidebar">
+      <ul class="nav nav-pills nav-stacked menuContainer" data-spy="affix" style="max-width:16%">
+        <li><a href="../index.html"><b><i class="fa fa-home" aria-hidden="true"></i> HOME</b></a></li>
+        <li><a href="chapter1.html">1. Getting started</a></li>
+        <li class="active"><a href="chapter2.html">2. Variables</a>
+          <nav id="subMenu">
+            <ul class="nav nav-pills nav-stacked subMenuContainer">
+              <li><a href="#ifTheory">If - Theory</a></li>
+              <li><a href="#ifPractice">If - Practice</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="chapter3.html">3. If statement</a></li>
+        <li><a href="chapter4.html">4. While and For Statements</a></li>
+        <li><a href="chapter5.html">5. Arrays</a></li>
+        <li><a href="chapter6.html">6. Methods</a></li>
+        <li><a href="chapter7.html">7. Classes</a></li>
+      </ul>
+    </nav>
+  </div>
+    <div class="col-sm-6 col-md-8">
+
+      <p class=BigTitleGuide><span lang=EN-US>VARIABLES</span></p>
+
+      <p class=LittleTitleGuide id="ifTheory"><span lang=EN-US>THEORY</span></p>
+      <p>You are finally ready to start programming, excited, eh? Well, the whole programming thing is based on variables, variables are like boxes in which you can put data; in C# a variable has 3 important properties:
+        <ul>
+          <li><b>Name:</b> the name of a variables will never change and you’ll use it to recall a variable. You can think of it as a label stuck on the box; </li>
+          <li><b>Type:</b> the type defines which kind of value the variable will store (e.g. numbers, words, lists, etc.). In our box metaphor the type is the shape of the box, you can't fit a square in a triangular box, right? Same goes for the type: you can't fit a word in a numeric variable;</li>
+          <li><b>Value:</b> it's the value inside the box, you can change it whenever you want, given that you respect the type limitations.</li>
+        </ul>
+        The types we are going to need the most in this first part of the guide are:
+      </p>
+      <table>
+        <tr style="color:#16B08B">
+          <th>Type</th>
+          <th>Meaning</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <th>Bool</th>
+          <td>It's a data type with only two possible values: true or false</td>
+          <td>True</td>
+        </tr>
+        <tr>
+          <th>Char</th>
+          <td>It can contain only a single character</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <th>String</th>
+          <td>It's a sequence of characters as long as you like</td>
+          <td>Hello World</td>
+        </tr>
+        <tr>
+          <th>Int</th>
+          <td>Integer numbers</td>
+          <td>-2</td>
+        </tr>
+        <tr>
+          <th>Float</th>
+          <td>real numbers</td>
+          <td>0.355f</td>
+        </tr>
+        <tr>
+          <th>Double</th>
+          <td>It's a float that allows for bigger numbers (you probably won't need it)</td>
+          <td>1.2f</td>
+        </tr>
+      </table>
+      At this point you may argue: "Why should I use a variable?", well the cool part of variables is that once you created them you can just write the name of the variable and the program will understand that you want him to replace that name with the actual value of the variable.  <br/>
+      To better explain this I’ll use an example: you want to create a program that given 2 initial numbers sums them and writes the result.<br/>
+      In <span class="coloredSpan">pseudocode</span> that would look like this:
+      <div class="highlight">
+        <pre>
+int Cypher0 = 2
+int Cypher1 = 3
+int Result = Cypher0 + Cypher1
+write Result</pre>
+      </div>
+      As you can see, the program treats the variables as they were the number they represented. Also, if you were wondering why I start counting from 0, don’t worry, it’s a common thing in programming, you’ll see this frequently.
+      <p class=LittleTitleGuide id="ifPractice"><span lang=EN-US>PRACTICE</span></p>
+      To use a variable, you have to declare it (create the box) and initialize it (put the first value into the box). <br/>
+      <p>Declaring syntax: <span style="color:blue">type</span> <span style="color:red">name</span>;<br>
+      <div style='padding-left:3em'>
+        <span style="color:blue">int</span> <span style="color:red">x</span>;<br/>
+        <span style="color:blue">int</span> <span style="color:red">y</span>;<br>
+        <span style="color:blue">char</span> <span style="color:red">character</span>;<br>
+        <span style="color:blue">bool</span> <span style="color:red">raining</span>;</p>
+      </div>
+      <p>
+      Initializing syntax: <span style="color:red">name</span> = <span style="color:purple">value</span>;<br>
+      <div style='padding-left:3em'>
+        <span style="color:red">x</span> = <span style="color:purple">-5</span>;<br>
+        <span style="color:red">y</span> = <span style="color:purple">3</span>;<br>
+        <span style="color:red">character</span> = <span style="color:purple">"t"</span>;<br>
+        <span style="color:red">raining</span> = <span style="color:purple">false</span>;
+      </div>
+    </p>
+    We can do both the declaring and initializing in just one line like this:<br>
+    <span style='padding-left:3em'><span style="color:blue">int</span> <span style="color:red">x</span> = <span style="color:purple">-5</span>;</span><br>
+    or we can use a variable as value for the initializing <br>
+    <span style='padding-left:3em'><span style="color:blue">int</span> <span style="color:red">x</span> = <span style="color:violet">y</span>;</span><br>
+    After this first 2 steps the variable is ready. So we will write our first program: you should have already created a new project from the previous chapters, if not go back and read them. <br>
+    Visual studio already prepared for you many lines of code, at the moment you don't need to know what those lines do, the important part is that all the code we are going to write must be placed beetween the <code>{ }</code> after <code>static void Main(string[] args)</code><br>
+    Our program will sum 2 integers and write the result, the code is this: <br>
+    </div>
+    <div class="col-sm-3 col-md-2"><div class="affix boxContainer" data-spy="affix">
+      <div id="flowControls" class="box">
+        <div class="boxTitle"><b><i class="fa fa-book" aria-hidden="true"></i> PSEUDOCODE</b></div>
+        <div class="boxContent">It's a piece of code not following the correct syntax of the language, programmers often use it to explain how to do something without being bound to a specific language </div>
+      </div>
+    </div></div>
+  </div>
+</div>
+
+</body>
+</html>

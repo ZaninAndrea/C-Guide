@@ -141,6 +141,23 @@ img{
   background-color: #e8fcf8;
   border-color: #16B08B;
 }
+/*table styling */
+td,th{
+  border-top: 1px solid  #16B08B;
+  border-bottom: 1px solid  #16B08B;
+}
+table{
+  margin:15px 0px 15px 30px
+}
+td,th{
+  padding:4px;
+}
+table tr:first-of-type th{
+  border-top: 0px;
+}
+table tr:last-of-type th, table tr:last-of-type td{
+  border-bottom: 0px;
+}
 
 td.linenos
 {
@@ -157,6 +174,9 @@ span.lineno
 pre
 {
   line-height:125%;
+  font-family:"Segoe UI",sans-serif !important;
+  padding-left: 30px;
+  margin-bottom: 0px;
 }
 
 body .hll

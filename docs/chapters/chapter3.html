@@ -19,10 +19,9 @@
       <nav class="allSidebar">
       <ul class="nav nav-pills nav-stacked menuContainer" data-spy="affix" style="max-width:16%">
         <li><a href="../index.html"><b><i class="fa fa-home" aria-hidden="true"></i> HOME</b></a></li>
-        <li><a href="#section1">1. Who is this guide for</a></li>
-        <li><a href="#section2">2. Getting Started</a></li>
-        <li><a href="#section3">3. Variables</a></li>
-        <li class="active"><a href="#section4">4. If statement</a>
+        <li><a href="chapter1.html">1. Getting started</a></li>
+        <li><a href="chapter2.html">2. Variables</a></li>
+        <li class="active"><a href="#">3. If statement</a>
           <nav id="subMenu">
             <ul class="nav nav-pills nav-stacked subMenuContainer">
               <li><a href="#ifTheory">If - theory</a></li>
@@ -34,22 +33,22 @@
             </ul>
           </nav>
         </li>
-        <li><a href="#section1">5. While and For Statements</a></li>
-        <li><a href="#section2">6. Arrays</a></li>
-        <li><a href="#section3">7. Methods</a></li>
-        <li><a href="#section3">8. Classes</a></li>
+        <li><a href="chapter4.html">4. While and For Statements</a></li>
+        <li><a href="chapter5.html">5. Arrays</a></li>
+        <li><a href="chapter6.html">6. Methods</a></li>
+        <li><a href="chapter7.html">7. Classes</a></li>
       </ul>
     </nav>
   </div>
     <div class="col-sm-6 col-md-8">
 
 
-      <p class=BigTitleGuide><span lang=EN-US>If statement</span></p>
+      <p class=BigTitleGuide><span lang=EN-US>IF STATEMENT</span></p>
 
       <p class=LittleTitleGuide id="ifTheory"><span lang=EN-US>THEORY</span></p>
 
       <p>So far we've only been able to create programs that always does the same thing, but programming is much more than that: we can use <span style='color:#16B08B'>flow controls</span>. [insert flow controls]
-      A good way to explain those are flow charts. The simplest flow control is <b>if</b>: it checks a condition and if it's true executes a piece of code, otherwise skips it. The flow chart for if looks something like this.</p>
+      A good way to explain those are flow charts. The simplest flow control is <code>if</code>: it checks a condition and if it's true executes a piece of code, otherwise skips it. The flow chart for if looks something like this.</p>
 
       <img width="35%" height="auto" src="4.The_if_statement_files/image004.png">
 
@@ -62,14 +61,14 @@
         <!-- THIS IS A CODE BLOCK -->
         <div lang=EN-US style='font-family:"Segoe UI",sans-serif'>
           So let's create a basic program that checks if the user wrote the right password and if so reveals him a secret
-      <div class="highlight"><pre style='font-family:"Segoe UI",sans-serif !important'><span></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Write the password here: &quot;</span><span class="p">);</span> <span class="c1">//ask the user for the password</span>
-      <span class="kt">string</span> <span class="n">userinput</span><span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//read what the user wrote </span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;password123&quot;</span><span class="p">){</span>
-      	<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;My secret is that I&#39;m a penguin&quot;</span><span class="p">);</span>
-      <span class="p">}</span>
-      <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//we use this command to prevent the windows from closing</span>
-      <span class="c1">//end</span>
-      </pre></div>
+      <div class="highlight"><pre>
+<span></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Write the password here: &quot;</span><span class="p">);</span> <span class="c1">//ask the user for the password</span>
+<span class="kt">string</span> <span class="n">userinput</span><span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//read what the user wrote </span>
+<span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;password123&quot;</span><span class="p">){</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;My secret is that I&#39;m a penguin&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//we use this command to prevent the windows from closing</span>
+<span class="c1">//end</span></pre></div>
       </div></p>
 
       <p>That's great! We wrote a useful program, but let's see what's new:</p>
@@ -80,7 +79,7 @@
       <span style='padding-left:3em'>Piece of code to execute</span> <br/>
       }</span></p>
 
-      <p>The <b>if</b> tells the program that we are using that flow control, the condition inside the round brackets is the one that the computer will check and the code inside the curly brackets will be executed only if the condition is satisfied. The curly brackets are always used to wrap a code block.</p>
+      <p>The <code>if</code> tells the program that we are using that flow control, the condition inside the round brackets is the one that the computer will check and the code inside the curly brackets will be executed only if the condition is satisfied. The curly brackets are always used to wrap a code block.</p>
 
       <p>Our condition had this structure: <span style='color:#7030A0'>variable == value</span>, this is the structure of the equality, it checks if the variable is equal to the requested value, if so returns true, otherwise returns false. Other operators are</p>
 
@@ -175,10 +174,10 @@
 
       <p>
         <!-- this is a code block-->
-        <div class="highlight"><pre style='font-family:"Segoe UI",sans-serif'><span></span><span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">x</span><span class="p">&gt;</span><span class="m">2</span> <span class="p">&amp;&amp;</span> <span class="n">x</span><span class="p">&lt;=</span><span class="m">5</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span><span class="n">x</span><span class="p">&gt;=</span><span class="m">10</span> <span class="p">&amp;&amp;</span> <span class="n">x</span><span class="p">&lt;</span><span class="m">15</span><span class="p">)</span> <span class="p">){</span>
-      	<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;GOT IT&quot;</span><span class="p">);</span>
-      <span class="p">}</span>
-      </pre></div>
+        <div class="highlight"><pre>
+<span></span><span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">x</span><span class="p">&gt;</span><span class="m">2</span> <span class="p">&amp;&amp;</span> <span class="n">x</span><span class="p">&lt;=</span><span class="m">5</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span><span class="n">x</span><span class="p">&gt;=</span><span class="m">10</span> <span class="p">&amp;&amp;</span> <span class="n">x</span><span class="p">&lt;</span><span class="m">15</span><span class="p">)</span> <span class="p">){</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;GOT IT&quot;</span><span class="p">);</span>
+<span class="p">}</span></pre></div>
       The code above will print "GOT IT" only if x (assuming x is an integer) is one of those values: 3, 4, 5, 10, 11, 12, 13, 14</p>
 
       <p class=BigTitleGuide>Else statement</p>
@@ -190,7 +189,7 @@
         <img src="#" alt="[ELSE CHART]">
       </p>
 
-      An <b>else </b>statement can only follow an <b>if </b>statement, a more complex <b>else </b>statement is the <b>else if</b>, it checks a condition and if it's true executes a piece of code, but the condition is only checked if the previous <b>if </b>evaluated to false. Better explained with a chart:</p>
+      An <code>else</code> statement can only follow an <code>if</code> statement, a more complex <code>else</code>statement is the <code>else if</code>, it checks a condition and if it's true executes a piece of code, but the condition is only checked if the previous <code>if</code> evaluated to false. Better explained with a chart:</p>
 
       <img width="70%" height="auto" src="4.The_if_statement_files/image008.png" alt="ELSE IF statement">
 
@@ -235,7 +234,12 @@
       <span style='padding-left:3em'>Piece of code to execute</span> <br/>
       }</p>
 
-      <p>In this case the rules are that the statements are check in descending order in the code and that the else has to be the last one. We'll use those chains if we have multiple options and want the user to pick one. In case you didn't understand, here is a chart</p>
+      <div class="bs-callout bs-callout-info">
+        <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> DON'T FORGET</h4>
+        <p>The condition are checked in descending order and only thhe first satisfied condition will trigger the code. Furthermore the <code>else</code> has to be the last block</p>
+      </div>
+
+      <p> We'll use those chains if we have multiple options and want the user to pick one. In case you didn't understand, here is a chart</p>
 
       <img width="90%" height="auto"id="Picture 8" src="4.The_if_statement_files/image010.png" alt="ELSE IF 2 statement">
 
@@ -246,18 +250,18 @@
       <p>Using what you learned try to create a program that asks the user for a password and if the users inputs the right password write your secret, if he inputs a second password write a fake secret (this is to prevent blackmail), if the password is wrong just write "You don't have the password, go away".<br/>
       In case you want to check the solution...</p>
       <!--this is a code block-->
-      <div class="highlight"><pre style='font-family:"Segoe UI",sans-serif'><span></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Write the password here: &quot;</span><span class="p">);</span> <span class="c1">//ask the user for the password</span>
-      <span class="kt">string</span> <span class="n">userinput</span><span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//read what the user wrote </span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;secretpassword&quot;</span><span class="p">){</span> <span class="c1">//real password</span>
-      	<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;My secret is that I&#39;m a penguin&quot;</span><span class="p">);</span> <span class="c1">//real secret</span>
-      <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;blackmail&quot;</span><span class="p">){</span>
-      	<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;I hate biscuits&quot;</span><span class="p">);</span> <span class="c1">//fake secret</span>
-      <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-      	<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;You don&#39;t have the password, go away&quot;</span><span class="p">);</span> <span class="c1">//error</span>
-      <span class="p">}</span>
-      <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//we use this command to prevent the windows from closing</span>
-      <span class="c1">//end</span>
-      </pre></div>
+      <div class="highlight"><pre>
+<span></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Write the password here: &quot;</span><span class="p">);</span> <span class="c1">//ask the user for the password</span>
+<span class="kt">string</span> <span class="n">userinput</span><span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//read what the user wrote </span>
+<span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;secretpassword&quot;</span><span class="p">){</span> <span class="c1">//real password</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;My secret is that I&#39;m a penguin&quot;</span><span class="p">);</span> <span class="c1">//real secret</span>
+<span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;blackmail&quot;</span><span class="p">){</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;I hate biscuits&quot;</span><span class="p">);</span> <span class="c1">//fake secret</span>
+<span class="p">}</span><span class="k">else</span><span class="p">{</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;You don&#39;t have the password, go away&quot;</span><span class="p">);</span> <span class="c1">//error</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//we use this command to prevent the windows from closing</span>
+<span class="c1">//end</span></pre></div>
 
       <p class=LittleTitleGuide id="advanced">ADVANCED</p>
 
