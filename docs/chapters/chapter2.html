@@ -23,8 +23,9 @@
         <li class="active"><a href="chapter2.html">2. Variables</a>
           <nav id="subMenu">
             <ul class="nav nav-pills nav-stacked subMenuContainer">
-              <li><a href="#ifTheory">If - Theory</a></li>
-              <li><a href="#ifPractice">If - Practice</a></li>
+              <li><a href="#theory">Theory</a></li>
+              <li><a href="#practice">Practice</a></li>
+              <li><a href="#advanced">Advanced</a></li>
             </ul>
           </nav>
         </li>
@@ -40,7 +41,7 @@
 
       <p class=BigTitleGuide><span lang=EN-US>VARIABLES</span></p>
 
-      <p class=LittleTitleGuide id="ifTheory"><span lang=EN-US>THEORY</span></p>
+      <p class=LittleTitleGuide id="theory"><span lang=EN-US>THEORY</span></p>
       <p>You are finally ready to start programming, excited, eh? Well, the whole programming thing is based on variables, variables are like boxes in which you can put data; in C# a variable has 3 important properties:
         <ul>
           <li><b>Name:</b> the name of a variables will never change and you’ll use it to recall a variable. You can think of it as a label stuck on the box; </li>
@@ -97,7 +98,7 @@ int Result = Cypher0 + Cypher1
 write Result</pre>
       </div>
       As you can see, the program treats the variables as they were the number they represented. Also, if you were wondering why I start counting from 0, don’t worry, it’s a common thing in programming, you’ll see this frequently.
-      <p class=LittleTitleGuide id="ifPractice"><span lang=EN-US>PRACTICE</span></p>
+      <p class=LittleTitleGuide id="practice"><span lang=EN-US>PRACTICE</span></p>
       To use a variable, you have to declare it (create the box) and initialize it (put the first value into the box). <br/>
       <p>Declaring syntax: <span style="color:blue">type</span> <span style="color:red">name</span>;<br>
       <div style='padding-left:3em'>
@@ -120,8 +121,89 @@ write Result</pre>
     or we can use a variable as value for the initializing <br>
     <span style='padding-left:3em'><span style="color:blue">int</span> <span style="color:red">x</span> = <span style="color:violet">y</span>;</span><br>
     After this first 2 steps the variable is ready. So we will write our first program: you should have already created a new project from the previous chapters, if not go back and read them. <br>
-    Visual studio already prepared for you many lines of code, at the moment you don't need to know what those lines do, the important part is that all the code we are going to write must be placed beetween the <code>{ }</code> after <code>static void Main(string[] args)</code><br>
+    Visual studio already prepared for you many lines of code, at the moment you don't need to know what those lines do, the important part is that all the code we are going to write must be placed beetween the <code>{ }</code> after <code>static void Main(string[] args)</code>, we'll leave the rest as it is for the moment.<br>
     Our program will sum 2 integers and write the result, the code is this: <br>
+
+    <div class="highlight"><pre>
+<span></span><span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">y</span><span class="p">;</span>
+<span class="n">x</span> <span class="p">=</span> <span class="m">5</span><span class="p">;</span>
+<span class="n">y</span> <span class="p">=</span> <span class="m">8</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">result</span> <span class="p">=</span> <span class="n">x</span> <span class="p">+</span> <span class="n">y</span><span class="p">;</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="c1">// the end</span></pre></div>
+
+    Let’s try it, by clicking <kbd>F5</kbd> or the green Start button. The program will start, a console will pop up and we'll see that the program wrote 13. <br>
+    Now let's dig into the code and understand how it works: <br>
+    <ul>
+    <li>every line end with a semicolon, this is a rule of C# that you have to follow always</li>
+    <li>the first 2 lines are declarations </li>
+    <li>the 3-4 lines are initialization </li>
+    <li>the line 5 is declares and initialize result </li>
+    <li>in the line 5 as value we use <code>x + y</code>, c# can handle this, in fact we can use any basic mathematic expression as value: <code>x * y</code>, <code>x – y – 5</code>, <code>y / 8</code> are all acceptable values </li>
+    <li>in the line 6 there is a new syntax we never saw, it's called a method and we'll talk about that later, but basically it takes some input and does something, in this case it writes the input in the console </li>
+    <li>line 7 is another method, it doesn't require input and it asks the user to type a value. We used this, because when the program reaches the end of the code it shuts itself down, so we added this method that doesn't end until the user press <kbd>enter</kbd></li>
+    <li>the last line is a comment, it’s good practice to use those a lot, so that you and other people can understand the code when reading it in the future. To comment something just write <code>// comment text 123</code> for a single line comment, you can also comment after a statement <code>x=5 // x is now 5</code> or make multiline comments  <br>
+    <code>x=5 /* x <br>
+    is <br>
+    now <br>
+    5 */</code>
+  </li>
+    </ul>
+    <br>
+    <p class=LittleTitleGuide id="advanced"><span lang=EN-US>ADVANCED</span></p>
+    Here are a bunch of useful syntaxes for numeric types:
+    <table>
+      <tr>
+        <td><code>
+          x=y + 3; <br>
+          x=3*6; <br>
+          y=8/x; <br>
+          x=(y+5)*(8-3)
+        </code></td>
+        <td>
+          As we already said basic mathematical expressions are allowed
+        </td>
+      </tr>
+      <tr>
+        <td><code>
+          x++;<br>
+          x--;
+        </code></td>
+        <td>
+          It's a quick way to add or subtract 1
+        </td>
+      </tr>
+      <tr>
+        <td><code>
+          x = 0; <br>
+          x+=3; <br>
+          x-=4; <br>
+          x*=-2;
+        </code></td>
+        <td>
+          The same as: <br>
+          <code>x=x+3; <br>
+          x=x-4; <br>
+          x=x*(-2);</code>
+        </td>
+      </tr>
+      <tr>
+        <td><code>
+          x = 22 % 8
+        </code></td>
+        <td>
+          The % is the modulus/remainder sign
+        </td>
+      </tr>
+    </table>
+    It’s useful to know that you can sum strings, they will just snap together:<br>
+    <code>
+      string a = “abc”; <br>
+      string b = “def”; <br>
+      string c = a+b;   // c will evaluate to “abcdef”
+    </code>
     </div>
     <div class="col-sm-3 col-md-2"><div class="affix boxContainer" data-spy="affix">
       <div id="flowControls" class="box">

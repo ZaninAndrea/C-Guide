@@ -150,9 +150,9 @@ table{
   margin:15px 0px 15px 30px
 }
 td,th{
-  padding:4px;
+  padding:4px 8px 4px 8px;
 }
-table tr:first-of-type th{
+table tr:first-of-type th, table tr:first-of-type td{
   border-top: 0px;
 }
 table tr:last-of-type th, table tr:last-of-type td{
