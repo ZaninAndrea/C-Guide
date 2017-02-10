@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guida</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/e11e439cdf.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-spy="scroll" data-target="#subMenu" style="position:relative">
+
+<div class="Main">
+  <div class="row">
+    <div class="col-sm-3 col-md-2">
+      <nav class="allSidebar">
+      <ul class="nav nav-pills nav-stacked menuContainer" data-spy="affix" style="max-width:16%">
+        <li><a href="../index.html"><b><i class="fa fa-home" aria-hidden="true"></i> HOME</b></a></li>
+        <li class="active"><a href="#section1">1. Who is this guide for</a>
+          <nav id="subMenu">
+            <ul class="nav nav-pills nav-stacked subMenuContainer">
+              <li><a href="#whoIsFor">Who is this guide for?</a></li>
+              <li><a href="#tools">The tools</a></li>
+              <li><a href="#elseTheory">Else - theory</a></li>
+              <li><a href="#elsePractice">Else - practice</a></li>
+              <li><a href="#assignement">Assignement</a></li>
+              <li><a href="#advanced">Advanced</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="#section2">2. Getting Started</a></li>
+        <li><a href="#section3">3. Variables</a></li>
+        <li><a href="#section4">4. If statement</a></li>
+        <li><a href="#section1">5. While and For Statements</a></li>
+        <li><a href="#section2">6. Arrays</a></li>
+        <li><a href="#section3">7. Methods</a></li>
+        <li><a href="#section3">8. Classes</a></li>
+      </ul>
+    </nav>
+  </div>
+    <div class="col-sm-6 col-md-8">
+
+      <p class=BigTitleGuide><span lang=EN-US>Getting started</span></p>
+
+      <p class=LittleTitleGuide id="whoIsFor"><span lang=EN-US>Who is this guide for?</span></p>
+      <p>This guide is meant for both programmers and non-programmers, theory and practice will be kept separate so that you can skip the theory you already know if you want to. </p>
+
+      <p><span style='color:#16B08B'>If you are an already experienced programmer</span><br/>
+      I suggest you to skip all the teory in the first part (variables, flow control,...), but still if you never programmed in an object-oriented language you should read the more advanced theory, because it's language specific.</p>
+
+      <p><span style='color:#16B08B'>If you are new to programming</span><br/>
+      Read the whole guide and don't skip theory, it may be boring (not too boring don't worry), but without it you are not going anywhere; don't worry if you don't understand some concepts the first time, read it again and try doing some tests to understand how it works.</p>
+
+      <p class=LittleTitleGuide id="tools"><span lang=EN-US>The tools</span></p>
+      To program in C# you will need a text editor and a <span class="coloredSpan">compiler</span>, you can use whatever you want, but I highly recommend Visual Studio: it's both a text editor and a compiler, it has amazing features that help you writing and debugging the code and it's free. You can download it <a href="https://www.microsoft.com/it-it/download/details.aspx?id=48146">here</a><br/>
+      <div class="bs-callout bs-callout-info">
+        <h4><i class="fa fa-wrench" aria-hidden="true"></i> PRO TIP</h4>
+        <p>If you are an hardcore programmer and command line fanatic check out <a href="https://github.com/dotnet/roslyn">roslyn</a>. It's mantained by Microsoft and has some pretty nice features.</p>
+      </div>
+      In the installation make sure to install all the c# packages<br/>
+      Take your time, I can wait...<br/>
+      Done? Great so run Visual Studio, click that "New Project..." button and choose the Visual C# Console Application template.
+
+    </div>
+    <div class="col-sm-3 col-md-2"><div class="affix boxContainer" data-spy="affix">
+      <div id="flowControls" class="box">
+        <div class="boxTitle"><b><i class="fa fa-book" aria-hidden="true"></i> COMPILER</b></div>
+        <div class="boxContent">The compiler takes your code and trasforms (compiles) it into an executable program.</div>
+      </div>
+    </div></div>
+  </div>
+</div>
+
+</body>
+</html>
