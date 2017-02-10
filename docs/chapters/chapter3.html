@@ -65,7 +65,7 @@
 <span></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Write the password here: &quot;</span><span class="p">);</span> <span class="c1">//ask the user for the password</span>
 <span class="kt">string</span> <span class="n">userinput</span><span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//read what the user wrote </span>
 <span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;password123&quot;</span><span class="p">){</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;My secret is that I&#39;m a penguin&quot;</span><span class="p">);</span>
+      <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;My secret is that I&#39;m a penguin&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//we use this command to prevent the windows from closing</span>
 <span class="c1">//end</span></pre></div>
@@ -74,100 +74,51 @@
       <p>That's great! We wrote a useful program, but let's see what's new:</p>
 
       <p>We used the if statement like this: <br />
-      <span class="syntax">
+      <code>
         if (condition){ <br/>
       <span style='padding-left:3em'>Piece of code to execute</span> <br/>
-      }</span></p>
+    }</code></p>
 
       <p>The <code>if</code> tells the program that we are using that flow control, the condition inside the round brackets is the one that the computer will check and the code inside the curly brackets will be executed only if the condition is satisfied. The curly brackets are always used to wrap a code block.</p>
 
-      <p>Our condition had this structure: <span style='color:#7030A0'>variable == value</span>, this is the structure of the equality, it checks if the variable is equal to the requested value, if so returns true, otherwise returns false. Other operators are</p>
-
-      <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=643
-       style='width:481.9pt;border-collapse:collapse'>
-       <tr>
-        <td width=321 valign=top style='width:240.95pt;border:solid black 1.0pt;
-        border-right:none;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=Standard><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>!=</span></p>
-        </td>
-        <td width=321 valign=top style='width:240.95pt;border:solid black 1.0pt;
-        padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Not
-        equal</span></p>
-        </td>
-       </tr>
-       <tr>
-        <td width=321 valign=top style='width:240.95pt;border-top:none;border-left:
-        solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-        padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>&gt;&nbsp;</span></p>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>&lt;&nbsp;</span></p>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>&gt;=</span></p>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>&lt;=</span></p>
-        </td>
-        <td width=321 valign=top style='width:240.95pt;border:solid black 1.0pt;
-        border-top:none;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Greater</span></p>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>Smaller</span></p>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>greater
-        of equal</span></p>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>smaller
-        or equal</span></p>
-        </td>
-       </tr>
-       <tr>
-        <td width=321 valign=top style='width:240.95pt;border-top:none;border-left:
-        solid black 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:none;
-        padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>condition1 &amp;&amp; condition2</span></p>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>x&gt;5 &amp;&amp; &lt;10 //returns true if x is between 5 and
-        10</span></p>
-        </td>
-        <td width=321 valign=top style='width:240.95pt;border-top:none;border-left:
-        solid black 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
-        padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>It's
-        the logical AND: returns true only if both conditions are true</span></p>
-        </td>
-       </tr>
-       <tr>
-        <td width=321 valign=top style='width:240.95pt;border-top:none;border-left:
-        solid black 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:none;
-        padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>condition1 || condition2</span></p>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>name=="George" || name=="Tim" //returns if the name is either
-        George or Tim</span></p>
-        </td>
-        <td width=321 valign=top style='width:240.95pt;border-top:none;border-left:
-        solid black 1.0pt;border-bottom:solid windowtext 1.0pt;border-right:solid black 1.0pt;
-        padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>It's
-        the logical OR: returns true if either condition is true</span></p>
-        </td>
-       </tr>
-       <tr>
-        <td width=321 valign=top style='width:240.95pt;border-top:none;border-left:
-        solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
-        padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif;
-        color:#7030A0'>()</span></p>
-        </td>
-        <td width=321 valign=top style='width:240.95pt;border:solid black 1.0pt;
-        border-top:none;padding:2.75pt 2.75pt 2.75pt 2.75pt'>
-        <p class=TableContents><span lang=EN-US style='font-family:"Segoe UI",sans-serif'>You
-        can wrap condition inside brackets, those work as in math: first you solve
-        things inside the brackets, then outside</span></p>
-        </td>
-       </tr>
+      <p>Our condition had this structure: <code>variable == value</code>, this is the structure of the equality, it checks if the variable is equal to the requested value, if so returns true, otherwise returns false. Other operators are</p>
+      <table>
+        <tr>
+          <td><code>!=</code></td>
+          <td>Not equal</td>
+        </tr>
+        <tr>
+          <td><code>
+            ><br>
+            <<br>
+            >=<br>
+            <=
+          </code></td>
+          <td>
+            Greater <br>
+            Smaller <br>
+            greater of equal <br>
+            smaller or equal
+          </td>
+        </tr>
+        <tr>
+          <td><code>
+            condition1 && condition2 <br>
+            x>5 && <10 //returns true if x is between 5 and 10
+          </code></td>
+          <td>It's the logical AND: returns true only if both conditions are true</td>
+        </tr>
+        <tr>
+          <td><code>
+            condition1 || condition2 <br>
+            name=="George" || name=="Tim" //returns if the name is either George or Tim
+          </code></td>
+          <td>It's the logical OR: returns true if either condition is true</td>
+        </tr>
+        <tr>
+          <td><code>()</code></td>
+          <td>You can wrap condition inside brackets, those work as in math: first you solve things inside the brackets, then outside</td>
+        </tr>
       </table>
 
       <p>An example of a complex condition:</p>
@@ -176,7 +127,7 @@
         <!-- this is a code block-->
         <div class="highlight"><pre>
 <span></span><span class="k">if</span> <span class="p">(</span> <span class="p">(</span><span class="n">x</span><span class="p">&gt;</span><span class="m">2</span> <span class="p">&amp;&amp;</span> <span class="n">x</span><span class="p">&lt;=</span><span class="m">5</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span><span class="n">x</span><span class="p">&gt;=</span><span class="m">10</span> <span class="p">&amp;&amp;</span> <span class="n">x</span><span class="p">&lt;</span><span class="m">15</span><span class="p">)</span> <span class="p">){</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;GOT IT&quot;</span><span class="p">);</span>
+      <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;GOT IT&quot;</span><span class="p">);</span>
 <span class="p">}</span></pre></div>
       The code above will print "GOT IT" only if x (assuming x is an integer) is one of those values: 3, 4, 5, 10, 11, 12, 13, 14</p>
 
@@ -197,29 +148,29 @@
 
       <p>The syntax for the else statement is this:</p>
 
-      <p class="syntax">
+      <code>
         if (condition){<br />
 
       <span style='padding-left:3em'> Piece of code to execute<br/>
       }<br/>
       else{<br/>
       <span style='padding-left:3em'>Piece of code to execute</span> <br/>
-      }</p>
+    }</code>
 
       <p>The syntax for the else if is this:</p>
 
-      <p class="syntax">
+      <code>
         if (condition){<br />
 
       <span style='padding-left:3em'> Piece of code to execute<br/>
       }<br/>
       else if (second condition){<br/>
       <span style='padding-left:3em'>Piece of code to execute</span> <br/>
-      }</p>
+    }</code>
 
       <p>We can also concatenate more if/else/else if statements like this</p>
 
-      <p class="syntax">
+      <code>
         if (condition){<br />
 
       <span style='padding-left:3em'> Piece of code to execute<br/>
@@ -232,10 +183,10 @@
       }<br/>
       else{<br/>
       <span style='padding-left:3em'>Piece of code to execute</span> <br/>
-      }</p>
+    }</code>
 
       <div class="bs-callout bs-callout-info">
-        <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> DON'T FORGET</h4>
+        <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> PAY ATTENTION</h4>
         <p>The condition are checked in descending order and only thhe first satisfied condition will trigger the code. Furthermore the <code>else</code> has to be the last block</p>
       </div>
 
@@ -254,11 +205,11 @@
 <span></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Write the password here: &quot;</span><span class="p">);</span> <span class="c1">//ask the user for the password</span>
 <span class="kt">string</span> <span class="n">userinput</span><span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//read what the user wrote </span>
 <span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;secretpassword&quot;</span><span class="p">){</span> <span class="c1">//real password</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;My secret is that I&#39;m a penguin&quot;</span><span class="p">);</span> <span class="c1">//real secret</span>
+      <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;My secret is that I&#39;m a penguin&quot;</span><span class="p">);</span> <span class="c1">//real secret</span>
 <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">userinput</span><span class="p">==</span><span class="s">&quot;blackmail&quot;</span><span class="p">){</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;I hate biscuits&quot;</span><span class="p">);</span> <span class="c1">//fake secret</span>
+      <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;I hate biscuits&quot;</span><span class="p">);</span> <span class="c1">//fake secret</span>
 <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;You don&#39;t have the password, go away&quot;</span><span class="p">);</span> <span class="c1">//error</span>
+      <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;You don&#39;t have the password, go away&quot;</span><span class="p">);</span> <span class="c1">//error</span>
 <span class="p">}</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//we use this command to prevent the windows from closing</span>
 <span class="c1">//end</span></pre></div>
@@ -268,17 +219,17 @@
       <p>If you just need to assign a value to a variable in the if and else statement you can use a compact form. <br/>
       Instead of using this</p>
 
-      <p class="syntax">
+      <code>
         if (condition){<br/>
       <span style="padding-left:3em">x=valueTrue;</span><br/>
       }<br/>
       else {<br/>
       <span style="padding-left:3em">x=valueFalse;</span><br/>
-      }</p>
+    }</code>
 
       <p>You can write this:</p>
 
-      <p class="syntax">x=condition ? valueTrue : valueFalse;</p>
+      <code>x=condition ? valueTrue : valueFalse;</code>
     </div>
     <div class="col-sm-3 col-md-2"><div class="affix boxContainer" data-spy="affix">
       <div id="flowControls" class="box">

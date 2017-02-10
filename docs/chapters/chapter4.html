@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guida</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/e11e439cdf.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body data-spy="scroll" data-target="#subMenu" style="position:relative">
+
+<div class="Main">
+  <div class="row">
+    <div class="col-sm-3 col-md-2">
+      <nav class="allSidebar">
+      <ul class="nav nav-pills nav-stacked menuContainer" data-spy="affix" style="max-width:16%">
+        <li><a href="../index.html"><b><i class="fa fa-home" aria-hidden="true"></i> HOME</b></a></li>
+        <li><a href="chapter1.html">1. Getting started</a></li>
+        <li><a href="#">2. Variables</a></li>
+        <li><a href="chapter3.html">3. If statement</a></li>
+        <li class="active"><a href="chapter4.html">4. While and For Statements</a>
+          <nav id="subMenu">
+            <ul class="nav nav-pills nav-stacked subMenuContainer">
+              <li><a href="#whileTheory">While - Theory</a></li>
+              <li><a href="#whilePractice">While - Practice</a></li>
+              <li><a href="#whileAssignement">While - Assignement</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="chapter5.html">5. Arrays</a></li>
+        <li><a href="chapter6.html">6. Methods</a></li>
+        <li><a href="chapter7.html">7. Classes</a></li>
+      </ul>
+    </nav>
+  </div>
+    <div class="col-sm-6 col-md-8">
+
+      <p class=BigTitleGuide><span lang=EN-US>WHILE</span></p>
+
+      <p class=LittleTitleGuide id="whileTheory"><span lang=EN-US>WHILE - THEORY</span></p>
+      The while statement is <i>drum roll</i> another flow control, it repeats a piece of code as long as a condition is satisfied. The while statement and the for statement (we’ll see this soon) are also called <i>loops</i>, because they loop code. His flow chart would look like this.
+      <img width="35%" height="auto" src="5.While_and_for_files/image001.png">
+      <p class=LittleTitleGuide id="whilePractice"><span lang=EN-US>WHILE - PRACTICE</span></p>
+      The while syntax as you could have guessed is:<br>
+      <code>
+        while(<i>condition</i>){<br>
+          <span style="padding-left:3em"><i>code to execute</i><br></span>
+        }
+      </code>
+      <div class="bs-callout bs-callout-info">
+        <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> PAY ATTENTION</h4>
+        <p>If your while loop never ends the program will crash. So don't do things like <br>
+          <code>
+            int x = 10; <br>
+            while(x>0){<br>
+              <span style="padding-left:3em">Console.WriteLine("I'm an endless loop");<br></span>
+            }
+          </code>
+        </p>
+      </div>
+      There are two more keywords that you should learn:
+      <ul>
+        <li><b>break</b>: calling break will cause the software to exit the loop, without executing the following code nor checking the condition, it works with all the flow controls (<code>if</code> too). To call the break just write <code>break;</code>, e.g. <br>
+          <div class="highlight"><pre>
+<span></span><span class="kt">int</span> <span class="n">count</span><span class="p">=</span><span class="m">0</span><span class="p">;</span>
+<span class="kt">string</span> <span class="n">userInput</span><span class="p">=</span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="k">while</span><span class="p">(</span><span class="n">userInput</span><span class="p">!=</span><span class="s">&quot;password&quot;</span><span class="p">){</span>
+      <span class="n">count</span><span class="p">++;</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">count</span><span class="p">&gt;</span><span class="m">5</span><span   class="p">){</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;You tried too many times, bye bye&quot;</span><span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="n">userInput</span><span class="p">=</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+<span class="p">}</span></pre></div>
+        </li>
+        <li><b>continue</b>: this one only works with loops and when called ends the current cycle of the loop, it <b>DOESN'T EXIT</b> the loop, just skip the following code for this cycle. You can call it writing <code>continue;</code>
+        </li>
+      </ul>
+      And for the while statement that's it, enjoy! <br>
+      <p class=LittleTitleGuide id="whileAssignement"><span lang=EN-US>WHILE - ASSIGNEMENT</span></p>
+      Code a program that given a number as input prints all the numbers from 0 to that number. <br>
+      TIPS: <br>
+      <ul>
+        <li>To convert a string into an integer you can use the <code>Int32.Parse(<i>value</i>)</code> method, the input must be a string and the output will be an integer</li>
+        <li>Similarly to convert an integer into a string: <ode>integer.ToString()</code> where integer is your int variable</li>
+      </ul>
+      BONUS POINT:<br>
+      <ul>
+        <li>check if the input is negative and if so respond with an error</li>
+      </ul>
+      SOLUTION: <br>
+      <div class="highlight"><pre>
+<span></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Write the number here: &quot;</span><span class="p">);</span> <span class="c1">//ask the user for the number</span>
+<span class="kt">string</span> <span class="n">userinput</span><span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//read what the user wrote</span>
+<span class="kt">int</span> <span class="n">number</span><span class="p">=</span> <span class="n">Int32</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">userinput</span><span class="p">);</span> <span class="c1">//converts the user input to integer</span>
+<span class="kt">int</span> <span class="n">x</span><span class="p">=</span><span class="m">0</span><span class="p">;</span> <span class="c1">//sets the x to 0</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">number</span><span class="p">&gt;=</span><span class="m">0</span><span class="p">){</span> <span class="c1">//makes sure that the number is greater than 0</span>
+      <span class="k">while</span> <span class="p">(</span><span class="n">x</span><span class="p">&lt;=</span><span class="n">number</span><span class="p">){</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span> <span class="c1">//prints x</span>
+      		  <span class="n">x</span><span class="p">++;</span> <span class="c1">//adds 1 to x</span>
+      <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span><span class="p">{</span>
+            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Error: number smaller than 0&quot;</span><span class="p">);</span> <span class="c1">//prints the error</span>
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//we use this command to prevent the windows from closing</span>
+<span class="n">Cypher0</span> <span class="p">=</span> <span class="m">2</span></pre></div>
+    </div>
+    <div class="col-sm-3 col-md-2"><div class="affix boxContainer" data-spy="affix">
+      <div id="flowControls" class="box">
+        <div class="boxTitle"><b><i class="fa fa-book" aria-hidden="true"></i> PSEUDOCODE</b></div>
+        <div class="boxContent">It's a piece of code not following the correct syntax of the language, programmers often use it to explain how to do something without being bound to a specific language </div>
+      </div>
+    </div></div>
+  </div>
+</div>
+
+</body>
+</html>
