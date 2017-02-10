@@ -39,7 +39,7 @@
   </div>
     <div class="col-sm-6 col-md-8">
 
-      <p class=BigTitleGuide><span lang=EN-US>WHILE</span></p>
+      <p class=BigTitleGuide><span lang=EN-US>WHILE STATEMENT</span></p>
 
       <p class=LittleTitleGuide id="whileTheory"><span lang=EN-US>WHILE - THEORY</span></p>
       The while statement is <i>drum roll</i> another flow control, it repeats a piece of code as long as a condition is satisfied. The while statement and the for statement (we’ll see this soon) are also called <i>loops</i>, because they loop code. His flow chart would look like this.
@@ -80,7 +80,7 @@
         <li><b>continue</b>: this one only works with loops and when called ends the current cycle of the loop, it <b>DOESN'T EXIT</b> the loop, just skip the following code for this cycle. You can call it writing <code>continue;</code>
         </li>
       </ul>
-      And for the while statement that's it, enjoy! <br>
+      And for the while statement that's it, enjoy! <br><br>
       <p class=LittleTitleGuide id="whileAssignement"><span lang=EN-US>WHILE - ASSIGNEMENT</span></p>
       Code a program that given a number as input prints all the numbers from 0 to that number. <br>
       TIPS: <br>
@@ -108,6 +108,36 @@
 <span class="p">}</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span> <span class="c1">//we use this command to prevent the windows from closing</span>
 <span class="n">Cypher0</span> <span class="p">=</span> <span class="m">2</span></pre></div>
+<br>
+      <p class=BigTitleGuide><span lang=EN-US>FOR STATEMENT</span></p>
+      <p class=LittleTitleGuide id="whileTheory"><span lang=EN-US>FOR - THEORY</span></p>
+      The for can be thought of as a wrapper for a while loop
+      <table>
+        <tr>
+          <th>FOR LOOP</th>
+          <th>EQUIVALENT WHILE LOOP</th>
+        </tr>
+        <tr>
+          <td><code>
+            for (int i=0; i<=5; i++){
+	            <span style="padding-left:3em">Console.WriteLine(i.ToString());</span><br>
+            }</code></td>
+          <td><code>
+            int i=0;<br>
+  while(i<=5){
+  	<span style="padding-left:3em">Console.WriteLine(i.ToString());</span><br>
+  	<span style="padding-left:3em">i++;</span><br>
+  }<br>
+</code></td>
+        </tr>
+      </table>
+      <p class=LittleTitleGuide id="whileTheory"><span lang=EN-US>FOR - PRACTICE</span></p>
+      The syntax of the for loop is <br>
+      <code>
+        for (<i>declaration and assignment</i>; <i>condition</i>; <i>variable update</i>){<br>
+          <span style="padding-left:3em"><i>Code to execute </i></span><br>
+        }
+      </code>
     </div>
     <div class="col-sm-3 col-md-2"><div class="affix boxContainer" data-spy="affix">
       <div id="flowControls" class="box">
@@ -119,4 +149,4 @@
 </div>
 
 </body>
-</html>
+</html

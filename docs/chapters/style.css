@@ -141,6 +141,10 @@ img{
   background-color: #e8fcf8;
   border-color: #16B08B;
 }
+img{
+  padding-top: 15px;
+  padding-bottom:15px;
+}
 /*table styling */
 td,th{
   border-top: 1px solid  #16B08B;
