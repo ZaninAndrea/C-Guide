@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Guida</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/e11e439cdf.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <script src="script.js"></script>
+</head>
+<body data-spy="scroll" data-target="#subMenu" style="position:relative">
+
+<div class="Main">
+  <div class="row">
+    <div class="col-sm-3 col-md-2">
+      <nav class="allSidebar">
+      <ul class="nav nav-pills nav-stacked menuContainer" data-spy="affix" style="max-width:16%">
+        <li><a href="../index.html"><b><i class="fa fa-home" aria-hidden="true"></i> HOME</b></a></li>
+        <li><a href="chapter1.html">1. Getting started</a></li>
+        <li><a href="#">2. Variables</a></li>
+        <li><a href="chapter3.html">3. If statement</a></li>
+        <li><a href="chapter4.html">4. While and For Statements</a></li>
+        <li><a href="chapter5.html">5. Arrays</a></li>
+        <li class="active"><a href="chapter6.html">6. Methods</a>
+          <nav id="subMenu">
+            <ul class="nav nav-pills nav-stacked subMenuContainer">
+              <li><a href="#theory">Arrays - Theory</a></li>
+              <li><a href="#practice">Arrays - Practice</a></li>
+              <li><a href="#advanced">Arrays - Advanced</a></li>
+              <li><a href="#assignement">Arrays - Assignement</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="chapter7.html">7. Classes</a></li>
+      </ul>
+    </nav>
+  </div>
+    <div class="col-sm-6 col-md-8">
+      <h1 id="arrays">ARRAYS</h1>
+<h2 id="theory">THEORY</h2>
+<p>Arrays are a handy way to store many variables of the same type. They work as an ordered list. It’s important to know that you can’t change the number of items stored inside the array once it’s initialized.
+You can think of any element of the array as a variable</p>
+<h2 id="practice">PRACTICE</h2>
+<p>To declare an array use the syntax</p>
+<p><code>type[] arrayName;</code></p>
+<p>It’s very similar to the declaration of a standard variable, but after the type you have to write <code>[]</code>
+To initialize you can use any of those syntaxes<br>
+<code>arrayName = new type[N] {variable1, variable2, [...], variableN};</code><br>
+<code>arrayName = new type[] {variable1, variable2, [...], variableN};</code><br>
+<code>arrayName = {variable1, variable2, [...], variableN};</code><br>
+<code>arrayName = new type[N];</code><br>
+The first 3 create an array containing N elements all defined by the values inside the curly brackets, separeted by commas. The last one just creates the array of size N, but doesn’t initialize the elements inside it.
+Remember that you can’t recall a variable until you have initialized it.</p>
+<p>Now that we have declared our array, we wat to access those elements, to do so
+<code>arrayName[index]</code>
+The index insed the square brackets is the 0-based position of the element inside the array
+e.g.</p>
+<div class="highlight"><pre><span></span><span class="kt">string</span><span class="p">[]</span> <span class="n">fruits</span><span class="p">={</span><span class="s">&quot;apple&quot;</span><span class="p">,</span><span class="s">&quot;peach&quot;</span><span class="p">,</span><span class="s">&quot;orange&quot;</span><span class="p">};</span>
+<span class="kt">string</span> <span class="n">apple</span> <span class="p">=</span> <span class="n">fruits</span><span class="p">[</span><span class="m">0</span><span class="p">];</span> <span class="c1">//the apple variable has the value &quot;apple&quot;</span>
+<span class="kt">string</span> <span class="n">peach</span><span class="p">=</span><span class="n">fruits</span><span class="p">[</span><span class="m">1</span><span class="p">];</span> <span class="c1">//the peach variable has the value &quot;peach&quot;</span>
+<span class="n">fruits</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;pear&quot;</span><span class="p">;</span> <span class="c1">//replaces orange with pear</span>
+</pre></div>
+<blockquote>
+<p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> DON'T FORGET<br>
+Array indexes are 0-based (this means that you start counting from 0), whereas array lengths are 1-based (you start counting from 1), so an array containing 2 elements has length 2, but you can recall indexes 0 and 1</p>
+</blockquote>
+<h2 id="advanced">ADVANCED</h2>
+<p>To get the number of elements inside an array use the syntax<br>
+<code>arrayName.Length</code><br>
+Why are arrays useful? Why can't you just use many variables? Well first they make your code easier to read and prettier; if this is not enough for you you can also iterate through an array.<br>
+eg.</p>
+<div class="highlight"><pre><span></span><span class="kt">string</span><span class="p">[]</span> <span class="n">fruits</span><span class="p">={</span><span class="s">&quot;apple&quot;</span><span class="p">,</span><span class="s">&quot;peach&quot;</span><span class="p">,</span><span class="s">&quot;orange&quot;</span><span class="p">};</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">=</span><span class="m">0</span><span class="p">;</span> <span class="n">i</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">fruits</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++){</span>
+	<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">+</span> <span class="s">&quot; is a fruit&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>The for cycle will work no matter how many fruits we put inside the array.<br>
+You can join all the elements of an array into one single string using the method<br>
+<code>Array.Join(separator, arrayName)</code></p>
+<h2 id="assignement">ASSIGNEMENT</h2>
+<p>Create a program that writes the first 70 numbers of the Fibonacci sequence, separeted by a comma and a space<br>
+TIPS:</p>
+<ul>
+<li>The Fibonacci sequence is defined like this: the first 2 elements are 1 and 1, every other element is equal to the sum of the previous two</li>
+<li>You should create an array containing all the numbers, no need to instantiate every element of the array at the start</li>
+<li>Fill the array using a <code>for</code> loop</li>
+<li>Once you filled the array you can write all the elements using the <code>Array.join</code> function</li>
+</ul>
+
+    </div>
+    <div class="col-sm-3 col-md-2"><div class="affix boxContainer" data-spy="affix">
+      <!--<div id="flowControls" class="box">
+        <div class="boxTitle"><b><i class="fa fa-book" aria-hidden="true"></i> PSEUDOCODE</b></div>
+        <div class="boxContent">It's a piece of code not following the correct syntax of the language, programmers often use it to explain how to do something without being bound to a specific language </div>
+      </div>-->
+    </div></div>
+  </div>
+</div>
+
+</body>
+</html
